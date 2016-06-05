@@ -24,6 +24,7 @@ const SizeAwareComponent = React.createClass({
 module.exports = require('react-native-measureme')(SizeAwareComponent);
 ```
 
+## Development
 PRs highly appreciated
 
 License
