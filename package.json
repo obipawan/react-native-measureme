@@ -2,9 +2,13 @@
   "name": "react-native-measureme",
   "version": "0.0.1",
   "description": "A HOC to make your React-Native components aware of their width and height",
-  "main": "MeasureMeHOC.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel --presets=es2015,react --plugins=transform-object-rest-spread MeasureMeHOC.js --out-file dist/index.js",
+    "prepare": "npm run build",
+    "prepush": "npm run build",
+    "precommit": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -24,5 +28,12 @@
   "bugs": {
     "url": "https://github.com/obipawan/react-native-measureme/issues"
   },
-  "homepage": "https://github.com/obipawan/react-native-measureme#readme"
+  "homepage": "https://github.com/obipawan/react-native-measureme#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "husky": "^3.0.4"
+  }
 }
