@@ -1,6 +1,6 @@
 {
   "name": "react-native-measureme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A HOC to make your React-Native components aware of their width and height",
   "main": "dist/index.js",
   "scripts": {
